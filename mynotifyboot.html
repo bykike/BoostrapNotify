@@ -13,7 +13,6 @@
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet">
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-eighties.min.css" rel="stylesheet">
 
 	<!-- Custom Cascading Style Sheets -->
@@ -34,12 +33,12 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body data-spy="scroll" data-target="nav" data-offset="72">
+<body data-spy="scroll" data-target="nav" data-offset="72" onload="notify()">
 
 <button onclick="notify('white')">White</button>
 
 	<script type="text/javascript">
-	function notify(style) {
+	function notify() {
 				$.notify("Apertura de la piscina este 9 de Junio.");
 				$.notify("Fiesta del Socio el próximo 31 Junio.");
 				$.notify("Comienzo de Multideporte para este verano.");
