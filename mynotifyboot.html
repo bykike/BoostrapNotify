@@ -39,14 +39,41 @@
 
 	<script type="text/javascript">
 	function notify() {
-				$.notify("Apertura de la piscina este 9 de Junio.");
-				$.notify("Fiesta del Socio el próximo 31 Junio.");
-				$.notify("Comienzo de Multideporte para este verano.");
-				    }
+				$.notify("orem ipsum dolor sit amet, consectetur adipiscing elit. Duis at odio eget est.");
+				$.notify("Etiam a ante varius, porta sapien interdum, volutpat ante.");
+				/*
+				function sleep(milliseconds) {
+				 var start = new Date().getTime();
+				 for (var i = 0; i < 1e7; i++) {
+					if ((new Date().getTime() - start) > milliseconds) {
+					 break;
+					}
+				 }
+				}
+				sleep(2000);
+				*/
+				$.notify({
+					message: 'Donec non tempus velit, ut lobortis felis. Pellentesque et nunc ultricies, tempus augue eget, rutrum ipsum.'
+				},{
+					type: 'warning'
+				});
+	}
+
+
+	function notify2() {
+			$.notify({
+		  	title: 'Email: Erica Fisher',
+		  	message: 'Investment, stakeholders micro-finance equity health Bloomberg; global citizens climate change. Solve positive social change sanitation, opportunity insurmountable challenges...'
+		  },{
+		  	type: 'pastel-warning',
+		  	delay: 5000,
+		  	template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+		  		'<span data-notify="title">{1}</span>' +
+		  		'<span data-notify="message">{2}</span>' +
+		  	'</div>'
+		  });
+	}
 	</script>
-
-
-
 
 	<section id="bootstrap-notify" class="[ container ]">
 		<div class="[ col-xs-12 col-lg-offset-1 col-lg-10 ]">
